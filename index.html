@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_HifAE6OGG3i2xj/view" data-text="Pay Now"
+    <!-- <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_HifAE6OGG3i2xj/view" data-text="Pay Now"
         data-color="#528FF0" data-size="medium">
         <script>
             (function () {
@@ -23,6 +23,33 @@
                 }
             })();
         </script>
+    </div> -->
+    <div style="display: flex;
+    height: 1000px;
+    justify-content: center;" class="container">
+        <div style="display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;" class="razorpay-embed-btn"
+            data-url="https://pages.razorpay.com/pl_HifAE6OGG3i2xj/view" data-text="Pay Now" data-color="#528FF0"
+            data-size="medium">
+            <script>
+                (function () {
+                    var d = document; var x = !d.getElementById('razorpay-embed-btn-js')
+                    if (x) {
+                        var s = d.createElement('script'); s.defer = !0; s.id = 'razorpay-embed-btn-js';
+                        s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js'; d.body.appendChild(s);
+                    } else {
+                        var rzp = window[ '_rzp_' ];
+                        rzp && rzp.init && rzp.init()
+                    }
+                })();
+            </script>
+            <iframe
+                src="https://cdn.razorpay.com/static/embed_btn/embed.html?url=https%3A%2F%2Fpages.razorpay.com%2Fpl_HifAE6OGG3i2xj%2Fview&amp;text=Donate%20Now&amp;color=%23528FF0&amp;size=medium&amp;referrer=file%3A%2F%2F%2FD%3A%2FOFFICIAL%2FsparkFoundation%2FPaymentGatewayIntegration%2Findex.html"
+                scrolling="no" frameborder="0" width="210px" height="100px"></iframe>
+        </div>
     </div>
 </body>
 
